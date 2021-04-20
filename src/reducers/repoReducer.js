@@ -1,8 +1,7 @@
 //init
 const init = {
-    user: "",
     loading: false, 
-    result: [] // {name: "", stargazers_count: 0, open_issues: 0, forks_count: 0}
+    result: [{user: ""}] // {name: "", stargazers_count: 0, open_issues: 0, forks_count: 0}
 }
 
 const repoReducer = (state=init, action) => {

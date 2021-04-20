@@ -7,18 +7,15 @@ const Card = () => {
     
     const dispatch = useDispatch(); 
 
-
-
     const result = useSelector(state => state.result);
-    const user = useSelector(state => state.user);
     const loading = useSelector(state => state.loading);
 
     useEffect ( async () => {
         dispatch(fetchRepos());
         },[]); 
 
-    console.log(result)
-    
+    console.log(result[0].user)
+
     return(
         <div className="card">
 
