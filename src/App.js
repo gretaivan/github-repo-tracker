@@ -1,11 +1,16 @@
 import React from "react";
-import { Repos } from "./container";
+import { Repos } from "./pages";
+import { Switch, Route } from 'react-router-dom';
+import {Header, Footer} from './layout'
+
 
 function App() {
   return (
-    <div>
+    <>
+      <Header/>
       <Repos />
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RepoCard, Form, Header } from "../../components";
+import { RepoCard, Form } from "../../components";
 import { fetchRepos } from "../../actions";
 import './style.css'
 
@@ -26,7 +26,6 @@ function Repos() {
 
   return(
     <>
-      <Header />
       <Form startSearch={query}/> 
       {/* {renderResult} */}
       {result[0].user ? <h2>Owner:  {result[0].user}</h2> : <h2>Enter username to see the repositories</h2>}

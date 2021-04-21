@@ -1,7 +1,7 @@
 {
   "name": "github-stats",
   "version": "1.0.0",
-  "description": "Github - repo",
+  "description": "Finds github repository data for the given name",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
@@ -26,7 +26,18 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gretaivan/github-repo-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gretaivan/github-repo-tracker.git/issues"
+  },
+  "homepage": "https://github.com/gretaivan/github-repo-tracker.git#readme"
 }

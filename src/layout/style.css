@@ -1,0 +1,71 @@
+@import url('../assets/css/constants.css');
+
+header, footer {
+    background-color: var(--secondary);
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  #logo {
+    font-size: 0.8em;
+    display: inline-block;
+  }
+  
+  #logo img {
+    height: 30px;
+    filter: invert(94%);
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin: auto;
+    font-size: 12px;
+    width: 18vw;
+}
+li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-text);
+    
+}
+li p {
+    text-align: center;
+    padding: 0 0 auto 0;
+    vertical-align: top;
+    
+}
+
+li img{
+    height: 40px;
+    /* padding: 5px; */
+    height: 40px;
+    filter: invert(93%);
+}
+
+li:nth-child(3){
+    width: auto;
+
+}
+
+
+@media only screen and (min-width: 715px) {
+
+    li{
+        margin: auto;
+        font-size: 1rem;
+        width: 20vw;
+    }
+}
+
