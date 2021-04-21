@@ -4,7 +4,7 @@ import { Repos } from "./container";
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>GitHub Repo Tracker</h1>
       <Repos />
     </div>
   );
