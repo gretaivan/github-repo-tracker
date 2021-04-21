@@ -9,8 +9,8 @@ const RepoCard = ({ repo }) => {
       {/* Username: {repo.user} */}
       <h3>Repo: {repo.repo} </h3>
       <p>Issue Count: {repo.open_issues} </p>
-      <p>Forks: {repo.forks}</p>
-      <p>Stargazers: {repo.stargazers}</p>
+      <p><span>&#9888;</span>Forks: {repo.forks}</p>
+      <p><span>&#9734;</span>Stargazers: {repo.stargazers}</p>
     </div>
   );
 };
