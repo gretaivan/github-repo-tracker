@@ -8,7 +8,6 @@
     --highlight: #238636;
     --accent: #d6715f;
     --border-hover: #6e767f;
-
 }
 
 *{
@@ -61,4 +60,8 @@ h2{
 h3{
     color: var(--text-highlight);
     font-size: 1rem;
+}
+
+.card span {
+    margin-right: 7px;
 }
