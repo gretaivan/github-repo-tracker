@@ -17,7 +17,7 @@ export const fetchRepos = () => {
         forks: el.forks,
         stargazers: el.stargazers_count,
       }));
-      console.log(repoData);
+      // console.log(repoData);
       dispatch({
         type: "LOAD_REPOS",
         payload: repoData,
