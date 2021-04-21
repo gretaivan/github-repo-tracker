@@ -24,11 +24,11 @@ function Form({startSearch}) {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Enter your github username"
+          placeholder="Enter github username"
           value={nameInput}
           onChange={updateInput}
         />
-        <input type="submit" value="submit" />
+        <input type="submit" value="search" />
       </form>
     </div>
   );
