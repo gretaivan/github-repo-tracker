@@ -1,10 +1,10 @@
 // API
 import axios from "axios";
 
-const username = "gretaivan";
+
 
 //fetch
-export const fetchRepos = () => {
+export const fetchRepos = (username) => {
   return async (dispatch) => {
     try {
       const { data } = await axios.get(

@@ -47,6 +47,7 @@ section{
 h2{
     font-size: 1.2rem;
     text-decoration: underline var(--accent)2px;
+    
 }
 
 .card{
@@ -67,5 +68,5 @@ h3{
 }
 
 @media only screen and (min-width: 768px) {
-    
+
 }

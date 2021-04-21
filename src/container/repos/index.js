@@ -11,14 +11,15 @@ function Repos() {
   const result = useSelector((state) => state.result);
   const loading = useSelector((state) => state.loading);
  
+  const query = username =>  dispatch(fetchRepos(username));
   let renderResult;
 
-  useEffect(async () => {
-    dispatch(fetchRepos());
-    // renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
+  // useEffect(async () => {
+  //   dispatch(fetchRepos());
+  //   // renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
 
 
-  }, []);
+  // }, []);
 
   console.log(result)
   
@@ -26,14 +27,15 @@ function Repos() {
   return(
     <>
       <Header />
-      <Form /> 
+      <Form startSearch={query}/> 
       {/* {renderResult} */}
       <section>
-        {result ? <h2>Owner:  {result[0].user}</h2> : <h2>No username given</h2>}
-        {
-          result.map((element, i) => (
+        {result[0].user ? <h2>Owner:  {result[0].user}</h2> : <h2>Enter username to see the repositories</h2>}
+        {result[0].repo &&
+            result.map((element, i) => (
             <RepoCard key={i} repo={element} />
           ))
+        
         } 
       </section>
     </>
