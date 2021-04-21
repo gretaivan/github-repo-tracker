@@ -29,8 +29,9 @@ function Repos() {
       <Header />
       <Form startSearch={query}/> 
       {/* {renderResult} */}
+      {result[0].user ? <h2>Owner:  {result[0].user}</h2> : <h2>Enter username to see the repositories</h2>}
       <section>
-        {result[0].user ? <h2>Owner:  {result[0].user}</h2> : <h2>Enter username to see the repositories</h2>}
+        
         {result[0].repo &&
             result.map((element, i) => (
             <RepoCard key={i} repo={element} />

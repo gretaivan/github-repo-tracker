@@ -16,4 +16,13 @@ Welcome to GitPinner
 ### Challenges 
 - Not deployed yet
 
+### Future features 
+- [ ] total repo count
+- [ ] user avatar
+- [ ] language tags
+- [ ] testing
+- [ ] add media queries for bigger size  
+    - [ ] h2 width 100?  
+    - [ ] .card reduce width
+
 Semhar & Greta
