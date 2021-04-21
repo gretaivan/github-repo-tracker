@@ -15,3 +15,5 @@ Welcome to GitPinner
 
 ### Challenges 
 - Not deployed yet
+
+Semhar & Greta
